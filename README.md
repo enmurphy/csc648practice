@@ -6,6 +6,12 @@ A cheat sheet for using Git in Web Development.
 
 - a list of the Git commands will be placed here once fully understood.
 
+```
+git commit -m "[your commit  message]"
+```
+
+- with the addition of -m, it tells git that the message in quotations is the message to use for your commit. 
+
 # Using NetBeans with Git
 
 To clone a repository into NetBeans, navigate to Team > Git > Clone and then follow the instructions provided to you on the screen that pops up.
