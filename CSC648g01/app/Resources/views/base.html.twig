@@ -2,12 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% block links %}<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />{% endblock %}
     </head>
-    <body>
+    <body {% block additions %}{% endblock %}>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
+    {% block div %}{% endblock %}
 </html>
