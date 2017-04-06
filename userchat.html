@@ -1,149 +1,248 @@
 <!DOCTYPE html>
-<!-- buyer and seller messaging page -->
 <html lang="en">
 <head>
   <title>CSC 648 Project Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css" type="text/css"/>
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
   <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
-        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {height: 450px}
-        /* Set gray background color and 100% height */
-        .sidenav {
-            padding-top: 20px;
-            background-color: #f1f1f1;
-            height: 100%;
-        }
-        /* Set black background color, white text and some padding */
-        footer {
-            background-color: #555;
-            color: white;
-            padding: 15px;
-        }
-        /* On small screens, set height to 'auto' for sidenav and grid */
-        @media screen and (max-width: 767px) {
-            .sidenav {
-                height: auto;
-                padding: 15px;
-            }
-            .row.content {height:auto;}
-        }
-    </style>
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+    }
+    
+    footer {
+       background-color: #C46E60;
+       padding: 15px;
+       color: #ffffff;
+    }
+   
+    .jumbotron {
+      background-color: #5A2D44; /* Purple for gators */
+      color: #ffffff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+    }
+   
+    .alert {
+      margin-bottom: 0;
+      border-radius: 0;
+      padding-top: 25px;
+    }
+   
+    .navbar {
+      margin-bottom: 0;
+      background-color: #C46E60;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+    }
+    .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+    }
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+    }
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+    }
+    
+    .caption {
+      font-size: 15px;
+    }
+   
+    .bg-grey {
+      background-color: #f6f6f6;
+    }
+ 
+    .thumbnail img {
+      width: 100%;
+    }
+   
+    .thumbnail {
+      padding: 0px;
+    }
+   
+    .alignleft {
+      float: left;
+    }
+   
+    .alignright {
+      float: right;
+    }
+   
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    #myBtn:hover {
+      background-color: #555;
+    }
+   </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Logo</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/">Home</a></li>
-                <li><a href="http://sfsuse.com/~sp17g01/sp17g01/web/About">About</a></li>
+<!-- Disclaimer -->
+<div class="alert alert-danger text-center">
+  <strong>Note!</strong> This website is only a class project. It is not an actual website to buy or sell things from.
+</div>  <!-- end disclaimer -->
 
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://sfsuse.com/~sp17g01/sp17g01/web/About">Sell Item</a></li>
-                <li><a href="http://sfsuse.com/~sp17g01/sp17g01/web/About">Register</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div>
+<!-- Navigation Bar -->
+ <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand active" href="#home"><img src="http://i.imgur.com/sP8o9FX.png" alt="GatorYard"></a>
     </div>
-</nav>
-
-<div class="container-fluid">
-    <div class="row content">
-        <div class="col-sm-2 sidenav">
-            <h1>Categories:</h1>
-                <div class="btn-group-vertical">
-                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><!--<button type="button" class="btn btn-secondary">--><a href="http://sfsuse.com/~sp17g01/sp17g01/web/all">All</a></button>
-                        <button type="button" class="btn btn-secondary"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/electronic">Electronics</a></button>
-                        <button type="button" class="btn btn-secondary"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/book">Books</a></button>
-                        <button type="button" class="btn btn-secondary"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/furniture">Furniture</a></button>
-                        <button type="button" class="btn btn-secondary"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/art">Art</a></button>
-                    </div>
-                </div>
-        </div>
-        <div class="col-sm-8">
-            <div class="text-center"><h1>Gator Yard</h1>
-            <p></p>
-
-            <hr>
-            </div>
-            
-            <div class="container">
-                <h2>Subject Title Here</h2>
-                    <!-- <p></p><br> -->
-                <div class="media">
-                    <div class="media-left">
-                    <img src="img_avatar1.png" class="media-object" style="width:45px">
-                    </div>
-                    <div class="media-body">
-                    <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
-                    </div>
-                </div>  
-                <hr>
-                <!-- Nested media object -->    
-                <div class="media">
-                    <div class="media-left">
-                    <img src="img_avatar5.png" class="media-object" style="width:45px">
-                    </div>
-                    <div class="media-body">
-                    <h4 class="media-heading">Jane Doe <small><i>Posted on February 19, 2016</i></small></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <br>
-                <!-- Comment section -->
-                <form>
-                <div class="form-group">
-                    <label for="comment">Comment:</label>
-                    <textarea class="form-control" rows="2" id="comment" placeholder="Comment"></textarea>
-                </div>
-    
-                <!-- submit button -->
-                <div class="row">
-                    <div class="col-sm-12 form-group">
-                        <button class="btn btn-default pull-right" type="submit">Send</button>
-                    </div>
-                </div>
-                </form>
-            </div>
-        </div>
-
-        <div class="col-sm-2 sidenav">
-            <div class="well">
-                <p>A</p>
-            </div>
-            <div class="well">
-                <p>A</p>
-            </div>
-        </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="http://sfsuse.com/~sp17g01/sp17g01/web/About">ABOUT</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#sellitem">SELL ITEM</a></li>
+        <li><a href="#register">REGISTER</a></li>
+        <li><a href="#login"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+      </ul>
     </div>
-</div>
+  </div>
+</nav> <!-- end nav -->
+
+<div class="jumbotron text-center">
+  <h1>GatorYard</h1>
+  <p>Some message about the website here</p>
+  <!-- Search bar -->
+  <form class="form-inline">
+    <div class="input-group">
+      <div class="input-group-btn">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories <span class="caret"></span></button>
+         <ul class="dropdown-menu">
+          <li><a href="#">Art and Collectables</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Books</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Clothes</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Cooking</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Electronics</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Furniture</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Health and Beauty</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Home Accessories</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Pet</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">School Supplies</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Sports</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Misc</a></li>
+         </ul>
+      </div>
+      <input type="text" class="form-control" size="50" placeholder="Search">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">
+         <i class="glyphicon glyphicon-search"></i>
+        </button>
+      </div>
+    </div>
+  </form> <!--end search bar -->
+</div> <!-- end jumbotron -->
+
+<!-- Buyer and Seller Chat -->
+<div class="container">
+   <h2>Subject Title Here</h2>
+   <div class="media">
+      <div class="media-left">
+          <img src="img_avatar1.png" class="media-object" style="width:45px">
+      </div>
+      <div class="media-body">
+          <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+      </div>
+    </div>  
+    <hr>
+    <!-- Nested media object -->    
+    <div class="media">
+      <div class="media-left">
+	      <img src="img_avatar5.png" class="media-object" style="width:45px">
+       </div>
+       <div class="media-body">
+          <h4 class="media-heading">Jane Doe <small><i>Posted on February 19, 2016</i></small></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       </div>
+    </div>
+    <br>
+    <!-- Comment section -->
+    <form>
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+          <textarea class="form-control" rows="2" id="comment" placeholder="Comment"></textarea>
+      </div>
     
-<footer class="container-fluid text-center">
-    <p>.</p>
-</footer>
-    
+      <!-- submit button -->
+        <div class="row">
+           <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Send</button>
+           </div>
+        </div>
+    </form>
+</div> <!-- end buyer and seller chat -->
+ 
+<!-- Scroll top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon glyphicon-chevron-up"></span></button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+   </script> <!-- end scroll top button -->
+ 
+ <!-- Footer -->
+ <footer class="container-fluid text-center">
+   <div class="container" style="clear: both;"> 
+     <p class="alignleft">© 2017 GatorYard  <a href="#">Terms of Service</a>  <a href="#">Privacy</a></p>
+     <a href="#"><img src="http://i.imgur.com/sP8o9FX.png" alt="GatorYard"></a>
+     <p class="alignright"><a href="#">Stuff</a>  <a href="#">Stuff</a></p>
+   </div>
+</footer> <!-- end footer -->
+ 
 </body>
 </html>
