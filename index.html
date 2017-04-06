@@ -1,149 +1,42 @@
-<!DOCTYPE html>
-<!-- buyer and seller messaging page -->
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>CSC 648 Project Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css" type="text/css"/>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
   <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
-        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {height: 450px}
-        /* Set gray background color and 100% height */
-        .sidenav {
-            padding-top: 20px;
-            background-color: #f1f1f1;
-            height: 100%;
-        }
-        /* Set black background color, white text and some padding */
-        footer {
-            background-color: #555;
-            color: white;
-            padding: 15px;
-        }
-        /* On small screens, set height to 'auto' for sidenav and grid */
-        @media screen and (max-width: 767px) {
-            .sidenav {
-                height: auto;
-                padding: 15px;
-            }
-            .row.content {height:auto;}
-        }
-    </style>
+    .jumbotron {
+      background-color: #5A2D44; /* Purple for gators */
+      color: #ffffff;
+    }
+   </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Logo</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/">Home</a></li>
-                <li><a href="http://sfsuse.com/~sp17g01/sp17g01/web/About">About</a></li>
-
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://sfsuse.com/~sp17g01/sp17g01/web/About">Sell Item</a></li>
-                <li><a href="http://sfsuse.com/~sp17g01/sp17g01/web/About">Register</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div class="container-fluid">
-    <div class="row content">
-        <div class="col-sm-2 sidenav">
-            <h1>Categories:</h1>
-                <div class="btn-group-vertical">
-                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><!--<button type="button" class="btn btn-secondary">--><a href="http://sfsuse.com/~sp17g01/sp17g01/web/all">All</a></button>
-                        <button type="button" class="btn btn-secondary"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/electronic">Electronics</a></button>
-                        <button type="button" class="btn btn-secondary"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/book">Books</a></button>
-                        <button type="button" class="btn btn-secondary"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/furniture">Furniture</a></button>
-                        <button type="button" class="btn btn-secondary"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/art">Art</a></button>
-                    </div>
-                </div>
-        </div>
-        <div class="col-sm-8">
-            <div class="text-center"><h1>Gator Yard</h1>
-            <p></p>
-
-            <hr>
-            </div>
-            
-            <div class="container">
-                <h2>Subject Title Here</h2>
-                    <!-- <p></p><br> -->
-                <div class="media">
-                    <div class="media-left">
-                    <img src="img_avatar1.png" class="media-object" style="width:45px">
-                    </div>
-                    <div class="media-body">
-                    <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
-                    </div>
-                </div>  
-                <hr>
-                <!-- Nested media object -->    
-                <div class="media">
-                    <div class="media-left">
-                    <img src="img_avatar5.png" class="media-object" style="width:45px">
-                    </div>
-                    <div class="media-body">
-                    <h4 class="media-heading">Jane Doe <small><i>Posted on February 19, 2016</i></small></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <br>
-                <!-- Comment section -->
-                <form>
-                <div class="form-group">
-                    <label for="comment">Comment:</label>
-                    <textarea class="form-control" rows="2" id="comment" placeholder="Comment"></textarea>
-                </div>
-    
-                <!-- submit button -->
-                <div class="row">
-                    <div class="col-sm-12 form-group">
-                        <button class="btn btn-default pull-right" type="submit">Send</button>
-                    </div>
-                </div>
-                </form>
-            </div>
-        </div>
-
-        <div class="col-sm-2 sidenav">
-            <div class="well">
-                <p>A</p>
-            </div>
-            <div class="well">
-                <p>A</p>
-            </div>
-        </div>
-    </div>
+<!-- Disclaimer -->
+<div class="alert alert-danger">
+  <strong>Note!</strong> This website is only a class project. It is not an actual website to buy or sell things from.
 </div>
-    
-<footer class="container-fluid text-center">
-    <p>.</p>
-</footer>
-    
+  
+<div class="jumbotron text-center">
+  <h1>GatorYard</h1>
+  <p>The SFSU Student Flea Market</p>
+  <!-- Search bar -->
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="text" class="form-control" size="50" placeholder="Search">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">
+          <i class="glyphicon glyphicon-search"></i>
+        </button>
+      </div>
+    </div>
+  </form> <!--end search bar -->
+</div>
+
 </body>
 </html>
