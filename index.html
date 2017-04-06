@@ -265,40 +265,14 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-   
-   $(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#home'], #myBtn").on('click', function(event) {
-
-   // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
-
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-      });
-    } // End if
-  });
-})
    </script> <!-- end scroll top button -->
  
  <!-- Footer -->
  <footer class="container-fluid text-center">
    <div class="container" style="clear: both;"> 
-     <p class="alignleft">© 2017 GatorYard <a href="#">Terms of Service</a> <a href="#">Privacy</a></p>
+     <p class="alignleft">© 2017 GatorYard  <a href="#">Terms of Service</a>  <a href="#">Privacy</a></p>
      <a href="#"><img src="http://i.imgur.com/sP8o9FX.png" alt="GatorYard"></a>
-     <p class="alignright"><a href="#">Stuff</a></p>
+     <p class="alignright"><a href="#">Stuff</a>  <a href="#">Stuff</a></p>
    </div>
 </footer> <!-- end footer -->
  
