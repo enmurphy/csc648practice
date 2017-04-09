@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% block title %}{% endblock %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -59,9 +58,32 @@
         .alignright {
             float: right;
         }
+
+        .alert {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding-top: 25px;
+        }
+
+        .caption {
+            font-size: 15px;
+        }
+
+        .thumbnail img {
+            width: 100%;
+        }
+
+        .thumbnail {
+            padding: 0px;
+        }
     </style>
 </head>
 <body>
+
+<!-- Disclaimer -->
+<div class="alert alert-danger text-center">
+    <strong>Note!</strong> This website is only a class project. It is not an actual website to buy or sell things from.
+</div> <!-- end disclaimer -->
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -71,11 +93,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="http://sfsuse.com/~sp17g01/sp17g01/web/"><img src="http://i.imgur.com/sP8o9FX.png" alt="GatorYard"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/">Home</a></li>
+            <ul class="nav navbar-nav navbar-toggle">
+                <li><a href="http://sfsuse.com/~sp17g01/sp17g01/web/">Home</a></li>
                 <li><a href="http://sfsuse.com/~sp17g01/sp17g01/web/About">About</a></li>
 
             </ul>
@@ -96,20 +118,31 @@
                     <h1>Categories:</h1>
                     <br>
                     <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/all">Art and Collectibles</a></p>
+                    <hr>
                     <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/electronic">Books</a></p>
+                    <hr>
                     <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/book">Clothes</a></p>
+                    <hr>
                     <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/furniture">Cooking</a></p>
+                    <hr>
                     <p><a href="#">Electronics</a></p>
+                    <hr>
                     <p><a href="#">Furniture</a></p>
+                    <hr>
                     <p><a href="#">Health and Beauty</a></p>
+                    <hr>
                     <p><a href="#">Home Accessories</a></p>
+                    <hr>
                     <p><a href="#">Pet</a></p>
+                    <hr>
                     <p><a href="#">School Supplies</a></p>
+                    <hr>
                     <p><a href="#">Sports</a></p>
+                    <hr>
                     <p><a href="#">Misc</a></p>
+                </font>
+            </font>
         </div>
-        </font>
-        </font>
         <div class="col-sm-8 text-center">
             <img src="http://img.photobucket.com/albums/v707/Candycaneangel44/ad5bee3d-4c7a-43c6-89b8-701e53fb830b_zpsxa2nejt1.png">
             <p></p>
@@ -117,9 +150,9 @@
             <hr>
             <!-- Body content goes here -->
             <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-                <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-                <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+                <li class="active"><a data-toggle="tab" href="#profile">Profile</a></li>
+                <li><a data-toggle="tab" href="#inbox">Inbox</a></li>
+                <li><a data-toggle="tab" href="#sale">Items for Sale</a></li>
             </ul>
 
             <div class="tab-content">
