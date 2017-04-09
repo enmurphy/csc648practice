@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% block title %}{% endblock %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -59,9 +58,20 @@
         .alignright {
             float: right;
         }
+
+        .alert {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding-top: 25px;
+        }
     </style>
 </head>
 <body>
+
+<!-- Disclaimer -->
+<div class="alert alert-danger text-center">
+    <strong>Note!</strong> This website is only a class project. It is not an actual website to buy or sell things from.
+</div> <!-- end disclaimer -->
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -71,7 +81,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="http://sfsuse.com/~sp17g01/sp17g01/web/"><img src="http://i.imgur.com/sP8o9FX.png" alt="GatorYard"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -118,20 +128,97 @@
                     <p><a href="#">Sports</a></p>
                     <hr>
                     <p><a href="#">Misc</a></p>
+                </font>
+            </font>
         </div>
-        </font>
-        </font>
         <div class="col-sm-8 text-center">
             <img src="http://img.photobucket.com/albums/v707/Candycaneangel44/ad5bee3d-4c7a-43c6-89b8-701e53fb830b_zpsxa2nejt1.png">
             <p></p>
 
             <hr>
             <!-- Body content goes here -->
-            <div class="container">
-                <div class="col-sm-4">
-
+            <!-- Recently added items -->
+            <div class="container bg-grey">
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/320x150" alt="">
+                        <div class="caption">
+                            <h4 class="pull-right">$64.99</h4>
+                            <h4><a href="#">Second Product</a>
+                            </h4>
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Contact Seller</a></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/320x150" alt="">
+                        <div class="caption">
+                            <h4 class="pull-right">$64.99</h4>
+                            <h4><a href="#">Second Product</a>
+                            </h4>
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Contact Seller</a></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/320x150" alt="">
+                        <div class="caption">
+                            <h4 class="pull-right">$64.99</h4>
+                            <h4><a href="#">Second Product</a>
+                            </h4>
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Contact Seller</a></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/320x150" alt="">
+                        <div class="caption">
+                            <h4 class="pull-right">$64.99</h4>
+                            <h4><a href="#">Second Product</a>
+                            </h4>
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Contact Seller</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/320x150" alt="">
+                        <div class="caption">
+                            <h4 class="pull-right">$64.99</h4>
+                            <h4><a href="#">Second Product</a>
+                            </h4>
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Contact Seller</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/320x150" alt="">
+                        <div class="caption">
+                            <h4 class="pull-right">$64.99</h4>
+                            <h4><a href="#">Second Product</a>
+                            </h4>
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Contact Seller</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end recently added items -->
             <!-- end body content -->
         </div>
 
