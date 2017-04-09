@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Cinzel|Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            letter-spacing: 4px;
+        }
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {height: 200%}
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: #00000;
+            height: 100%;
+            letter-spacing: 4px;
+        }
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #00000;
+            color: white;
+            padding: 10px;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {height:auto;}
+        }
+        input[type="file"] {
+            display: none;
+        }
+
+        .custom-file-upload {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+        .well{
+            width: 90%;
+        }
+
+        .alignleft {
+            float: left;
+        }
+
+        .alignright {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/">Home</a></li>
+                <li><a href="http://sfsuse.com/~sp17g01/sp17g01/web/About">About</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://sfsuse.com/~sp17g01/sp17g01/web/SellItem">Sell Item</a></li>
+                <li><a href="http://sfsuse.com/~sp17g01/sp17g01/web/About">Register</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <font size ="4">
+                <font face="Raleway">
+                    <h1>Categories:</h1>
+                    <br>
+                    <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/all">Art and Collectibles</a></p>
+                    <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/electronic">Books</a></p>
+                    <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/book">Clothes</a></p>
+                    <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/furniture">Cooking</a></p>
+                    <p><a href="#">Electronics</a></p>
+                    <p><a href="#">Furniture</a></p>
+                    <p><a href="#">Health and Beauty</a></p>
+                    <p><a href="#">Home Accessories</a></p>
+                    <p><a href="#">Pet</a></p>
+                    <p><a href="#">School Supplies</a></p>
+                    <p><a href="#">Sports</a></p>
+                    <p><a href="#">Misc</a></p>
+        </div>
+        </font>
+        </font>
+        <div class="col-sm-8 text-center">
+            <img src="http://img.photobucket.com/albums/v707/Candycaneangel44/ad5bee3d-4c7a-43c6-89b8-701e53fb830b_zpsxa2nejt1.png">
+            <p></p>
+
+            <hr>
+            <!-- Body content goes here -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+                <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>HOME</h3>
+                    <p>Some content.</p>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Some content in menu 1.</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Some content in menu 2.</p>
+                </div>
+            </div>
+            <!-- end body content -->
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+    <div class="container" style="clear: both;">
+        <p class="alignleft">© 2017 GatorYard  <a href="#">Terms of Service</a>  <a href="#">Privacy</a></p>
+        <a href="http://sfsuse.com/~sp17g01/sp17g01/web/"><img src="http://i.imgur.com/sP8o9FX.png" alt="GatorYard"></a>
+        <p class="alignright"><a href="#">Stuff</a>  <a href="#">Stuff</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
