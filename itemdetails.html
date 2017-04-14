@@ -76,6 +76,10 @@
         .thumbnail {
             padding: 0px;
         }
+
+        .contact-button {
+            border-radius: 0px;
+        }
     </style>
 </head>
 <body>
@@ -110,9 +114,9 @@
     </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container">
     <div class="row content">
-        <div class="col-sm-2 sidenav text-center">
+        <!--<div class="col-sm-2 sidenav text-center">
             <font size ="4">
                 <font face="Raleway">
                     <h1>Categories:</h1>
@@ -144,15 +148,47 @@
                     <p><a href="#">Misc</a></p>
                 </font>
             </font>
-        </div>
-        <div class="col-sm-8">
-            <div class="text-center"><img src="http://img.photobucket.com/albums/v707/Candycaneangel44/ad5bee3d-4c7a-43c6-89b8-701e53fb830b_zpsxa2nejt1.png"></div>
-            <p>SFSU Buy and Sell</p>
-
-            <hr>
+        </div>-->
+        <div class="container-fluid">
+            <div class="text-center"><img src="http://img.photobucket.com/albums/v707/Candycaneangel44/ad5bee3d-4c7a-43c6-89b8-701e53fb830b_zpsxa2nejt1.png">                <p>SFSU Buy and Sell</p></div>
             <!-- Body content goes here -->
-            <!--  item details -->
-
+            <br><br>
+            <font face="Raleway"><h6>&nbsp;RECENTLY ADDED ITEMS</h6></font>
+            <hr><br>
+            <!-- item details -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"> <!-- contains the product's image -->
+                        <img src="http://placehold.it/350x350" alt="Product Image" class="image-responsive">
+                    </div> <!-- end product image -->
+                    <div class="col-md-6"> <!-- contains product info -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Product Title Here</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>sold by USERNAME HERE</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="#" class="btn btn-primary contact-button" role="button">Contact Seller</a>
+                            </div>
+                        </div>
+                    </div> <!-- end product info -->
+                </div>
+                <div class="row"> <!-- product description -->
+                    <div class="col-md-12">
+                        <p class="description">
+                            Description of the item will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non gravida est.
+                            Suspendisse tempus ultrices placerat. Pellentesque nulla magna, blandit eu accumsan fermentum, imperdiet id nulla.
+                            Aliquam sollicitudin urna purus, sed dictum orci varius ut.
+                        </p>
+                    </div>
+                </div> <!-- end product description -->
+            </div>
             <!-- end body content -->
         </div>
 
@@ -164,9 +200,9 @@
 
 <footer class="container-fluid text-center">
     <div class="container" style="clear: both;">
-        <p class="alignleft">© 2017 GatorYard&nbsp;&nbsp;&nbsp;<a href="#">Terms of Service</a>&nbsp;&nbsp;&nbsp;<a href="#">Privacy</a></p>
+        <p class="alignleft">© 2017 GatorYard&nbsp;&nbsp;&nbsp;<a href="#">Privacy</a></p>
         <a href="http://sfsuse.com/~sp17g01/sp17g01/web/"><img src="http://i.imgur.com/sP8o9FX.png" alt="GatorYard"></a>
-        <p class="alignright"><a href="#">Stuff</a>&nbsp;&nbsp;&nbsp;<a href="#">Stuff</a></p>
+        <p class="alignright"><a href="#">Terms of Service</a></p>
     </div>
 </footer>
 
