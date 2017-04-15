@@ -25,9 +25,12 @@
         }
         /* Set black background color, white text and some padding */
         footer {
+            position: relative;
             background-color: #00000;
-            color: white;
             padding: 10px;
+            right: 0;
+            bottom: 0;
+            left: 0;
         }
         /* On small screens, set height to 'auto' for sidenav and grid */
         @media screen and (max-width: 767px) {
@@ -112,40 +115,9 @@
 
 <div class="container-fluid">
     <div class="row content">
-        <div class="col-sm-2 sidenav text-center">
-            <font size ="4">
-                <font face="Raleway">
-                    <h1>Categories:</h1>
-                    <br>
-                    <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/all">Art and Collectibles</a></p>
-                    <hr>
-                    <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/electronic">Books</a></p>
-                    <hr>
-                    <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/book">Clothes</a></p>
-                    <hr>
-                    <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/furniture">Cooking</a></p>
-                    <hr>
-                    <p><a href="#">Electronics</a></p>
-                    <hr>
-                    <p><a href="#">Furniture</a></p>
-                    <hr>
-                    <p><a href="#">Health and Beauty</a></p>
-                    <hr>
-                    <p><a href="#">Home Accessories</a></p>
-                    <hr>
-                    <p><a href="#">Pet</a></p>
-                    <hr>
-                    <p><a href="#">School Supplies</a></p>
-                    <hr>
-                    <p><a href="#">Sports</a></p>
-                    <hr>
-                    <p><a href="#">Misc</a></p>
-                </font>
-            </font>
-        </div>
         <div class="col-sm-8">
             <div class="text-center"><img src="http://img.photobucket.com/albums/v707/Candycaneangel44/ad5bee3d-4c7a-43c6-89b8-701e53fb830b_zpsxa2nejt1.png"></div>
-            <p>SFSU Buy and Sell</p>
+            <h5><font face="Raleway">SFSU Buy and Sell</font></h5></div>
 
             <hr>
             <!-- Body content goes here -->
@@ -200,9 +172,9 @@
 
 <footer class="container-fluid text-center">
     <div class="container" style="clear: both;">
-        <p class="alignleft">© 2017 GatorYard&nbsp;&nbsp;&nbsp;<a href="#">Terms of Service</a>&nbsp;&nbsp;&nbsp;<a href="#">Privacy</a></p>
+        <p class="alignleft">© 2017 GatorYard&nbsp;&nbsp;&nbsp;<a href="privacy.html">Privacy</a></p>
         <a href="http://sfsuse.com/~sp17g01/sp17g01/web/"><img src="http://i.imgur.com/sP8o9FX.png" alt="GatorYard"></a>
-        <p class="alignright"><a href="#">Stuff</a>&nbsp;&nbsp;&nbsp;<a href="#">Stuff</a></p>
+        <p class="alignright"><a href="tos.html">Terms of Service</a></p>
     </div>
 </footer>
 
