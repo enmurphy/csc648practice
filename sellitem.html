@@ -80,8 +80,22 @@
             padding: 0px;
         }
 
-        .contact-button {
-            border-radius: 0px;
+        input[type="file"] {
+            display: none;
+        }
+        input[name="name"] {
+            padding-right: 6px;
+            width: 190px;
+        }
+        input[name="price"] {
+            padding-right: 6px;
+            width: 80px;
+        }
+        .custom-file-upload {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
         }
 
         /*for the login/register*/
@@ -140,6 +154,25 @@
             content: "";
             clear: both;
             display: table;
+        }
+
+        /* for sell item page */
+        .bg-1{
+            background-color: #c03eb4;
+            color: #ffffff;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        input[name="name"] {
+            padding-right: 6px;
+            width: 190px;
+        }
+        .custom-file-upload {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -217,12 +250,42 @@
 <div class="container">
     <div class="row content">
         <div class="container-fluid">
-            <div class="text-center"><img src="http://img.photobucket.com/albums/v707/Candycaneangel44/ad5bee3d-4c7a-43c6-89b8-701e53fb830b_zpsxa2nejt1.png">
-                <h5><font face="Raleway">SFSU Buy and Sell</font></h5></div>
-            <!-- Body content goes here -->
-            <br><hr><br>
-            <!-- privacy content -->
-
+            <div class="row content">
+                <div class="text-center"><img src="http://img.photobucket.com/albums/v707/Candycaneangel44/ad5bee3d-4c7a-43c6-89b8-701e53fb830b_zpsxa2nejt1.png">
+                    <h5><font face="Raleway">SFSU Buy and Sell</font></h5></div>
+                <!-- Body content goes here -->
+                <br><br>
+                <font face="Raleway"><h6>&nbsp;RECENTLY ADDED ITEMS</h6></font>
+                <hr><br>
+                <!-- sell item -->
+                <div class="container">
+                    <font face="Raleway">
+                        <font size ="2">
+                            <h2>Sell an Item</h2>
+                            <center>
+                                <br><br>
+                                Item Name:
+                                <input type="text" name="name">
+                                <br><br>
+                                Price: $
+                                <input type="number" name="price" width="1">
+                                <br><br>
+                                Meetup On Campus:
+                                <input type="checkbox" name="meetup">
+                                <br><br></font>
+                        <label for="file-upload" class="custom-file-upload">
+                            <font size="3">
+                                Click to Upload Image</label>
+                    </font>
+                    <input id="file-upload" type="file"/>
+                    <br><br>
+                    Description:  <hr style="width:50%;">
+                    <textarea name="message" rows="5" cols="50"></textarea>
+                    <br><br>
+                    <input type="submit" name="Upload">
+                </div>
+                </div> <!-- end recently added items -->
+            </div>
             <!-- end body content -->
         </div>
 
