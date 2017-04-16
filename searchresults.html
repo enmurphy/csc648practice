@@ -137,6 +137,41 @@
             clear: both;
             display: table;
         }
+
+        /* allows about to be next to it*/
+        .dropdown {
+            float: left;
+        }
+        /* dropdown background */
+        .dropdown .dropbtn {
+            border: none;
+            border-width: 1px;
+            outline: none;
+            color: #BABABA;
+            padding: 14px 16px;
+            background-color: inherit;
+            letter-spacing: 3px;
+        }
+
+        /* dropdown menu */
+        .dropdown-menu a {
+            float: none;
+            color: black;
+            padding: 5px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* hover for drop down menu */
+        .dropdown-menu a:hover {
+            color: #BABABA;
+        }
+
+        /* hover dropdown */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -156,6 +191,41 @@
             </button>
             <a class="navbar-brand" href="http://sfsuse.com/~sp17g01/sp17g01/web/"><img src="http://i.imgur.com/sP8o9FX.png" alt="GatorYard"></a>
         </div>
+        <font face="Raleway">
+            <div class="dropdown">
+                <button class="dropbtn">Categories
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <font size ="2">
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/all">All</a></p>
+                        <li class="divider"></li>
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/art">Art and Collectibles</a></p>
+                        <li class="divider"></li>
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/book">Books</a></p>
+                        <li class="divider"></li>
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/clothes">Clothes</a></p>
+                        <li class="divider"></li>
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/cooking">Cooking</a></p>
+                        <li class="divider"></li>
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/electronic">Electronics</a></p>
+                        <li class="divider"></li>
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/furniture">Furniture</a></p>
+                        <li class="divider"></li>
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/health">Health and Beauty</a></p>
+                        <li class="divider"></li>
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/home">Home Accessories</a></p>
+                        <li class="divider"></li>
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/pet">Pet</a></p>
+                        <li class="divider"></li>
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/school">School Supplies</a></p>
+                        <li class="divider"></li>
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/sports">Sports</a></p>
+                        <li class="divider"></li>
+                        <p><a href="http://sfsuse.com/~sp17g01/sp17g01/web/misc">Misc</a></p>
+                    </font>
+                </ul>
+            </div>
+
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="http://sfsuse.com/~sp17g01/sp17g01/web/">Home</a></li>
@@ -168,6 +238,7 @@
                 <li><a onclick="document.getElementById('logBut').style.display='block'" class = "buttonSpace" style="float: right" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
+        </font>
     </div>
 </nav>
 
